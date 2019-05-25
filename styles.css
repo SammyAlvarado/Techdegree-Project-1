@@ -1,8 +1,8 @@
 /* Global Layout Set-up */
-* { 
+* {
   box-sizing: border-box;
 }
-  
+
 body {
   margin: 0;
   padding: 0;
@@ -45,6 +45,13 @@ a:hover {
     margin-right: auto;
     color: white;
 }
+
+.nav .subname{
+    display: block;
+    margin-right: auto;
+    color: white;
+}
+
 .nav li {
   padding: 5px 10px 10px 10px;
 }
@@ -76,6 +83,17 @@ header .profile-image {
 header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
 }
+header .experience-profile-image {
+  margin-top: 50px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid white;
+  transition: all .5s;
+}
+header .experience-profile-image:hover {
+  transform: scale(1.7) rotate(360deg);
+}
 .tag {
   background-color: #efefef;
   color: black;
@@ -83,7 +101,7 @@ header .profile-image:hover {
   border-radius: 5px;
   display: table;
   margin: 10px auto;
-} 
+}
 .location {
   background-color: #222;
   color: yellow;
@@ -98,8 +116,32 @@ header .profile-image:hover {
   border-radius: 6px;
   transition: all .5s;
 }
+
 .card:hover {
   border-color: #ff99ff;
+}
+
+.card-experience {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #aac;
+  border-radius: 4px;
+  transition: all .5s;
+}
+
+.card-experience:hover {
+  border-color: #ff99ff;
+}
+
+.card-experience:hover {
+  transform: scale(.9) rotate(1deg);
+}
+
+.card-experience:nth-child(odd) {
+  background: #d3edff;
 }
 
 ul.skills {
@@ -119,6 +161,16 @@ ul.skills {
 .skills li:nth-child(odd) {
   background: #0399ff;
 }
+
+.experience-skills li {
+  border-radius: 6px;
+  display: inline-block;
+  background: #ffde5b;
+  color: white;
+  padding: 5px 10px;
+  margin: 2px;
+}
+
 
 footer {
   width: 100%;
@@ -169,10 +221,10 @@ a.social:hover {
 
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
-  
+
   .flex {
       display: -ms-flexbox;      /* TWEENER - IE 10 */
-      display: flex; 
+      display: flex;
       max-width: 1200px;
       -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -204,4 +256,3 @@ a.social:hover {
   }
 
 }
-
