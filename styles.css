@@ -64,7 +64,7 @@ a:hover {
 
 header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
+  background: url('images/sky scraper.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -125,7 +125,7 @@ header .experience-profile-image:hover {
   margin: 30px;
   padding: 20px 40px 40px;
   max-width: 500px;
-  text-align: left;
+  text-align: center;
   background: #fff;
   border-bottom: 4px solid #aac;
   border-radius: 4px;
@@ -255,4 +255,11 @@ a.social:hover {
     margin: 40px auto;
   }
 
-}
+  div .image-sample {
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 30%;
+    border: 3px solid white;
+    transition: all .2s;
+  }
