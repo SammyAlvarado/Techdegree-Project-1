@@ -76,12 +76,12 @@ header .profile-image {
   margin-top: 50px;
   width: 150px;
   height: 150px;
-  border-radius: 50%;
+  border-radius: 20%;
   border: 3px solid white;
-  transition: all .5s;
+  transition: all .3s;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(1.2) rotate(2deg);
 }
 header .experience-profile-image {
   margin-top: 50px;
